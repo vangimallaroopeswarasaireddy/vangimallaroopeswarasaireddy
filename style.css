@@ -1,0 +1,244 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background animation */
+body {
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1e1e1e);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #0d0d0d;
+  color: #e0e0e0;
+}
+
+/* Header */
+header {
+  padding: 60px 20px;
+}
+header h1 {
+  font-size: 2.8rem;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+header p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #bdbdbd;
+}
+.profile-pic {
+  margin: 20px auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #00ffe5;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 12px 8px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background: rgba(0, 255, 255, 0.2);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 20px #00ffe5;
+}
+.btn.github { border-color: #333; }
+.btn.linkedin { border-color: #0077b5; }
+
+/* Sections */
+section {
+  padding: 80px 20px;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00ffe5;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Skills list */
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+ul li {
+  padding: 10px;
+  margin: 8px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid #00ffe5;
+  transition: transform 0.3s;
+}
+ul li:hover {
+  transform: translateX(10px);
+  background: rgba(0, 255, 255, 0.15);
+}
+
+/* Projects */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  position: relative;
+}
+.card h3 {
+  margin-bottom: 12px;
+  color: #00ffe5;
+}
+.card:hover {
+  transform: translateY(-20px) rotate3d(1, 1, 0, 15deg);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6),
+              0 0 30px #00ffe5;
+}
+
+/* Contact Section Buttons */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.contact-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  backdrop-filter: blur(12px);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Email */
+.contact-btn.email {
+  background: rgba(255, 0, 100, 0.2);
+  border: 2px solid #ff0066;
+}
+.contact-btn.email:hover {
+  background: #ff0066;
+  box-shadow: 0 0 20px #ff4da6, 0 0 40px #ff1a75;
+}
+
+/* GitHub */
+.contact-btn.github {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+}
+.contact-btn.github:hover {
+  background: #000;
+  box-shadow: 0 0 20px #fff, 0 0 40px #888;
+}
+
+/* LinkedIn */
+.contact-btn.linkedin {
+  background: rgba(0, 119, 181, 0.2);
+  border: 2px solid #0077b5;
+}
+.contact-btn.linkedin:hover {
+  background: #0077b5;
+  box-shadow: 0 0 20px #00aaff, 0 0 40px #0077b5;
+}
+
+/* Footer */
+footer {
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+footer p {
+  margin-bottom: 12px;
+  color: #bbb;
+}
+.social-icons a {
+  color: #fff;
+  margin: 0 12px;
+  display: inline-block;
+  transition: transform 0.4s, color 0.4s;
+}
+.social-icons a:hover {
+  transform: scale(1.4) rotate(10deg);
+  color: #00ffe5;
+}
+.social-icons svg {
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+/* Animations */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 1s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Dark mode toggle button */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #00ffe5;
+  color: #111;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  font-weight: bold;
+  box-shadow: 0 0 15px #00ffe5;
+  transition: all 0.3s ease;
+}
+.toggle-btn:hover {
+  transform: scale(1.1);
+  background: #fff;
+  color: #00ffe5;
+}
