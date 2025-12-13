@@ -1,17 +1,30 @@
-(() => {
-  const btn = document.getElementById("modeSwitch");
-  const saved = localStorage.getItem("theme");
-  const prefersDark = matchMedia("(prefers-color-scheme: dark)").matches;
+// Dark mode
+const toggle = document.getElementById("themeToggle");
 
-  if (saved === "dark" || (!saved && prefersDark)) {
-    document.body.classList.add("dark");
-  }
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.setItem(
+    "theme",
+    document.body.classList.contains("dark") ? "dark" : "light"
+  );
+});
 
-  btn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    localStorage.setItem(
-      "theme",
-      document.body.classList.contains("dark") ? "dark" : "light"
-    );
-  });
-})();
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+}
+
+// Reveal on scroll
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+reveals.forEach(el => observer.observe(el));
