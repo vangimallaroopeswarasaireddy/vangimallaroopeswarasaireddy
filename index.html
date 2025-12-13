@@ -2,63 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Roopeswara Sai Reddy | Resume</title>
+  <title>Roopeswara Sai Reddy – Resume</title>
+  <meta name="description" content="Computer Science undergraduate with experience in full stack development, cloud, and AI." />
 
-  <!-- Favicon -->
-  <link rel="icon" href="assets/favicon.png" type="image/png" />
-
-  <!-- CSS -->
+  <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container fade-in">
+  <div class="page">
 
-    <!-- Sidebar -->
-    <aside class="sidebar slide-in">
-      <!-- Profile Image -->
-      <img
-        src="assets/profile.jpg"
-        alt="Roopeswara Sai Reddy"
-        class="profile-img"
-      />
-
-      <h1 class="name">VANGIMALLA ROOPESWARA SAI REDDY</h1>
-      <p class="role">Computer Science Undergraduate</p>
-
-      <div class="contact">
-        <p>Tirupati, India</p>
-        <p>+91 7893987557</p>
-        <a href="mailto:sairoopeswara7@gmail.com">sairoopeswara7@gmail.com</a>
-
-        <a href="https://github.com/vangimallaroopeswarasaireddy">GitHub</a>
-        <a href="https://www.linkedin.com/in/vangimalla-roopeswara-sai-reddy-428070326/">LinkedIn</a>
-        <a href="https://vangimallaroopeswarasaireddy.github.io/vangimallaroopeswarasaireddy/">Portfolio</a>
-
-        <!-- Resume PDF -->
-        <a href="assets/resume.pdf" target="_blank" class="resume-btn">
-          Download Resume (PDF)
-        </a>
+    <!-- LEFT PANEL -->
+    <aside class="panel">
+      <div class="avatar-ring">
+        <img src="assets/profile.jpg" alt="Profile photo" />
       </div>
 
-      <button id="themeToggle" class="toggle">Dark Mode</button>
+      <h1>VANGIMALLA<br/>ROOPESWARA SAI REDDY</h1>
+      <p class="tagline">Computer Science Undergraduate</p>
+
+      <div class="info">
+        <span>Tirupati, India</span>
+        <span>+91 7893987557</span>
+        <a href="mailto:sairoopeswara7@gmail.com">sairoopeswara7@gmail.com</a>
+        <a href="https://github.com/vangimallaroopeswarasaireddy" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/vangimalla-roopeswara-sai-reddy-428070326/" target="_blank">LinkedIn</a>
+      </div>
+
+      <button id="modeSwitch">Toggle Theme</button>
     </aside>
 
-    <!-- Main -->
-    <main class="main slide-up">
+    <!-- CONTENT -->
+    <main class="content">
+
       <section>
         <h2>Profile</h2>
         <p>
-          Computer Science undergraduate with hands-on experience in full stack
-          web development, AI fundamentals, and cloud computing. Strong foundation
-          in Java, Python, JavaScript, and AWS.
+          Computer Science undergraduate with hands-on experience in web development,
+          cloud platforms, and AI fundamentals. Interested in building scalable,
+          reliable software systems.
         </p>
       </section>
+
+      <section>
+        <h2>Internships</h2>
+
+        <article>
+          <header>
+            <strong>AI & Cloud Technology Intern</strong>
+            <span>2025</span>
+          </header>
+          <p class="org">AICTE – Edunet Foundation</p>
+          <ul>
+            <li>Learned AI fundamentals and cloud deployment concepts.</li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <strong>Front End Web Development Intern</strong>
+            <span>2025</span>
+          </header>
+          <p class="org">AICTE – Edunet Foundation</p>
+          <ul>
+            <li>Built responsive web interfaces using HTML, CSS, and JavaScript.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <article>
+          <header>
+            <strong>AI Productivity & Tutoring Agents</strong>
+            <span>2025</span>
+          </header>
+          <ul>
+            <li>Created a multi-agent assistant using Python and AutoGen.</li>
+          </ul>
+        </article>
+
+        <article>
+          <header>
+            <strong>AWS Cloud Architecture Design</strong>
+            <span>2025</span>
+          </header>
+          <ul>
+            <li>Designed scalable hosting using EC2, S3, and Elastic Beanstalk.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>
+          <strong>B.Tech – Computer Science & Engineering</strong><br/>
+          Amrita Vishwa Vidyapeetham, Chennai<br/>
+          Expected 2027
+        </p>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>Oracle Certified: MySQL Fundamentals</li>
+          <li>OCI AI Foundations Associate</li>
+          <li>AWS APAC Solutions Architecture – Forage</li>
+          <li>OCI 2025 Certified Foundations Associate</li>
+        </ul>
+      </section>
+
     </main>
   </div>
 
-  <!-- JS -->
+  <!-- FLOATING RESUME -->
+  <a href="assets/resume.pdf" class="resume-float" target="_blank">
+    Resume PDF
+  </a>
+
   <script src="script.js"></script>
 </body>
 </html>
