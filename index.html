@@ -2,127 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Roopeswara Sai Reddy – Resume</title>
-  <meta name="description" content="Computer Science undergraduate with experience in full stack development, cloud, and AI." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vangimalla Roopeswara Sai Reddy | Resume</title>
 
   <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <div class="page">
+  <!-- Theme Toggle -->
+  <button id="themeToggle" aria-label="Toggle dark mode">☾</button>
 
-    <!-- LEFT PANEL -->
-    <aside class="panel">
-      <div class="avatar-ring">
-        <img src="assets/profile.jpg" alt="Profile photo" />
+  <!-- Header -->
+  <header class="container">
+    <img src="assets/profile.jpg" alt="Profile photo" class="avatar" />
+
+    <h1>Vangimalla Roopeswara Sai Reddy</h1>
+    <p class="subtitle">
+      Computer Science Undergraduate · Full Stack & Cloud
+    </p>
+
+    <div class="links">
+      <a href="assets/resume.pdf" download>Resume</a>
+      <a href="https://github.com/vangimallaroopeswarasaireddy" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/vangimalla-roopeswara-sai-reddy-428070326/" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section class="container reveal">
+    <h2>Summary</h2>
+    <p>
+      Computer Science undergraduate with practical experience in full stack web
+      development, AI fundamentals, and cloud computing. Strong foundation in
+      Java, Python, JavaScript, and AWS, focused on building scalable systems.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="container reveal">
+    <h2>Technical Skills</h2>
+    <ul class="grid">
+      <li><strong>Languages:</strong> Java, Python, JavaScript, C</li>
+      <li><strong>Web:</strong> HTML, CSS, React, Node.js</li>
+      <li><strong>Cloud:</strong> AWS (EC2, S3, Elastic Beanstalk)</li>
+      <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      <li><strong>Tools:</strong> Git, GitHub, Postman, VS Code</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section class="container reveal">
+    <h2>Internships</h2>
+
+    <div class="item">
+      <div class="item-header">
+        <span>AI & Cloud Technology Intern</span>
+        <span>2025</span>
       </div>
+      <p class="org">AICTE · Edunet Foundation</p>
+      <p>Worked on AI fundamentals and cloud computing concepts.</p>
+    </div>
 
-      <h1>VANGIMALLA<br/>ROOPESWARA SAI REDDY</h1>
-      <p class="tagline">Computer Science Undergraduate</p>
-
-      <div class="info">
-        <span>Tirupati, India</span>
-        <span>+91 7893987557</span>
-        <a href="mailto:sairoopeswara7@gmail.com">sairoopeswara7@gmail.com</a>
-        <a href="https://github.com/vangimallaroopeswarasaireddy" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/vangimalla-roopeswara-sai-reddy-428070326/" target="_blank">LinkedIn</a>
+    <div class="item">
+      <div class="item-header">
+        <span>Front End Web Development Intern</span>
+        <span>2025</span>
       </div>
+      <p class="org">AICTE · Edunet Foundation</p>
+      <p>Built responsive web interfaces using HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
 
-      <button id="modeSwitch">Toggle Theme</button>
-    </aside>
+  <!-- Projects -->
+  <section class="container reveal">
+    <h2>Projects</h2>
 
-    <!-- CONTENT -->
-    <main class="content">
+    <div class="item">
+      <strong>AI Agents for Productivity & Tutoring</strong>
+      <p>Multi-agent assistant built using Python and AutoGen.</p>
+    </div>
 
-      <section>
-        <h2>Profile</h2>
-        <p>
-          Computer Science undergraduate with hands-on experience in web development,
-          cloud platforms, and AI fundamentals. Interested in building scalable,
-          reliable software systems.
-        </p>
-      </section>
+    <div class="item">
+      <strong>AWS Hosting Architecture</strong>
+      <p>Designed scalable cloud infrastructure using AWS services.</p>
+    </div>
 
-      <section>
-        <h2>Internships</h2>
+    <div class="item">
+      <strong>Web Development Projects</strong>
+      <p>Responsive websites with live demos hosted on GitHub.</p>
+    </div>
+  </section>
 
-        <article>
-          <header>
-            <strong>AI & Cloud Technology Intern</strong>
-            <span>2025</span>
-          </header>
-          <p class="org">AICTE – Edunet Foundation</p>
-          <ul>
-            <li>Learned AI fundamentals and cloud deployment concepts.</li>
-          </ul>
-        </article>
+  <!-- Education -->
+<section class="container reveal">
+  <h2>Education</h2>
 
-        <article>
-          <header>
-            <strong>Front End Web Development Intern</strong>
-            <span>2025</span>
-          </header>
-          <p class="org">AICTE – Edunet Foundation</p>
-          <ul>
-            <li>Built responsive web interfaces using HTML, CSS, and JavaScript.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section>
-        <h2>Projects</h2>
-
-        <article>
-          <header>
-            <strong>AI Productivity & Tutoring Agents</strong>
-            <span>2025</span>
-          </header>
-          <ul>
-            <li>Created a multi-agent assistant using Python and AutoGen.</li>
-          </ul>
-        </article>
-
-        <article>
-          <header>
-            <strong>AWS Cloud Architecture Design</strong>
-            <span>2025</span>
-          </header>
-          <ul>
-            <li>Designed scalable hosting using EC2, S3, and Elastic Beanstalk.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-        <p>
-          <strong>B.Tech – Computer Science & Engineering</strong><br/>
-          Amrita Vishwa Vidyapeetham, Chennai<br/>
-          Expected 2027
-        </p>
-      </section>
-
-      <section>
-        <h2>Certifications</h2>
-        <ul>
-          <li>Oracle Certified: MySQL Fundamentals</li>
-          <li>OCI AI Foundations Associate</li>
-          <li>AWS APAC Solutions Architecture – Forage</li>
-          <li>OCI 2025 Certified Foundations Associate</li>
-        </ul>
-      </section>
-
-    </main>
+  <div class="item">
+    <div class="item-header">
+      <span>B.Tech in Computer Science & Engineering</span>
+      <span>Expected 2028</span>
+    </div>
+    <p class="org">Amrita Vishwa Vidyapeetham, Chennai</p>
+    <p class="small">
+      Relevant Coursework: Data Structures, Web Development, Operating Systems
+    </p>
   </div>
 
-  <!-- FLOATING RESUME -->
-  <a href="assets/resume.pdf" class="resume-float" target="_blank">
-    Resume PDF
-  </a>
+  <div class="item">
+    <div class="item-header">
+      <span>Intermediate (Class XII)</span>
+      <span>2023 — 79.4%</span>
+    </div>
+    <p class="org">Sri Chaitanya Junior College, Tirupati</p>
+  </div>
 
-  <script src="script.js"></script>
+  <div class="item">
+    <div class="item-header">
+      <span>SSC (Class X)</span>
+      <span>2021 — 86.5%</span>
+    </div>
+    <p class="org">Sri Chaitanya School, Rayachoti</p>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section class="container reveal">
+  <h2>Certifications</h2>
+
+  <ul class="cert-list">
+    <li>
+      <strong>Oracle Certified: MySQL Fundamentals</strong>
+      <span>Jul 2025</span>
+    </li>
+    <li>
+      <strong>OCI AI Foundations Associate</strong>
+      <span>Jul 2025</span>
+    </li>
+    <li>
+      <strong>AWS APAC Solutions Architecture Virtual Experience (Forage)</strong>
+      <span>Jul 2025</span>
+    </li>
+    <li>
+      <strong>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</strong>
+      <span>Aug 2025</span>
+    </li>
+  </ul>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Vangimalla Roopeswara Sai Reddy
+  </footer>
 </body>
 </html>
