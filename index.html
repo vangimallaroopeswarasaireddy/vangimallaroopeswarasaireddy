@@ -3,158 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vangimalla Roopeswara Sai Reddy | Resume</title>
+  <title>Vangimalla Roopeswara Sai Reddy | Portfolio</title>
 
   <link rel="icon" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 
-<body>
-  <!-- Theme Toggle -->
-  <button id="themeToggle" aria-label="Toggle dark mode">☾</button>
+<body class="preload">
 
-  <!-- Header -->
-  <header class="container">
-    <img src="assets/profile.jpg" alt="Profile photo" class="avatar" />
-
+  <!-- HERO -->
+  <section class="hero">
     <h1>Vangimalla Roopeswara Sai Reddy</h1>
-    <p class="subtitle">
-      Computer Science Undergraduate · Full Stack & Cloud
-    </p>
-
-    <div class="links">
-      <a href="assets/resume.pdf" download>Resume</a>
-      <a href="https://github.com/vangimallaroopeswarasaireddy" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/vangimalla-roopeswara-sai-reddy-428070326/" target="_blank">LinkedIn</a>
-    </div>
-  </header>
-
-  <!-- Summary -->
-  <section class="container reveal">
-    <h2>Summary</h2>
     <p>
-      Computer Science undergraduate with practical experience in full stack web
-      development, AI fundamentals, and cloud computing. Strong foundation in
-      Java, Python, JavaScript, and AWS, focused on building scalable systems.
+      I build web applications, explore AI systems,
+      and deploy ideas to the cloud.
     </p>
-  </section>
 
-  <!-- Skills -->
-  <section class="container reveal">
-    <h2>Technical Skills</h2>
-    <ul class="grid">
-      <li><strong>Languages:</strong> Java, Python, JavaScript, C</li>
-      <li><strong>Web:</strong> HTML, CSS, React, Node.js</li>
-      <li><strong>Cloud:</strong> AWS (EC2, S3, Elastic Beanstalk)</li>
-      <li><strong>Databases:</strong> MySQL, MongoDB</li>
-      <li><strong>Tools:</strong> Git, GitHub, Postman, VS Code</li>
-    </ul>
-  </section>
-
-  <!-- Experience -->
-  <section class="container reveal">
-    <h2>Internships</h2>
-
-    <div class="item">
-      <div class="item-header">
-        <span>AI & Cloud Technology Intern</span>
-        <span>2025</span>
-      </div>
-      <p class="org">AICTE · Edunet Foundation</p>
-      <p>Worked on AI fundamentals and cloud computing concepts.</p>
-    </div>
-
-    <div class="item">
-      <div class="item-header">
-        <span>Front End Web Development Intern</span>
-        <span>2025</span>
-      </div>
-      <p class="org">AICTE · Edunet Foundation</p>
-      <p>Built responsive web interfaces using HTML, CSS, and JavaScript.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="primary">My Work</a>
+      <a href="#contact" class="secondary">Contact</a>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="container reveal">
+  <!-- WHAT I BUILD -->
+  <section>
+    <h2>What I build</h2>
+    <div class="cards">
+      <div class="card">Modern web applications</div>
+      <div class="card">AI & automation experiments</div>
+      <div class="card">Cloud-based deployments</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
     <h2>Projects</h2>
-
-    <div class="item">
-      <strong>AI Agents for Productivity & Tutoring</strong>
-      <p>Multi-agent assistant built using Python and AutoGen.</p>
-    </div>
-
-    <div class="item">
-      <strong>AWS Hosting Architecture</strong>
-      <p>Designed scalable cloud infrastructure using AWS services.</p>
-    </div>
-
-    <div class="item">
-      <strong>Web Development Projects</strong>
-      <p>Responsive websites with live demos hosted on GitHub.</p>
+    <div class="projects">
+      <div class="project">AI Productivity Agent</div>
+      <div class="project">AWS Hosting Architecture</div>
+      <div class="project">Frontend Web Experiments</div>
     </div>
   </section>
 
-  <!-- Education -->
-<section class="container reveal">
-  <h2>Education</h2>
-
-  <div class="item">
-    <div class="item-header">
-      <span>B.Tech in Computer Science & Engineering</span>
-      <span>Expected 2028</span>
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Java</span>
+      <span>Python</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>AWS</span>
+      <span>MySQL</span>
     </div>
-    <p class="org">Amrita Vishwa Vidyapeetham, Chennai</p>
-    <p class="small">
-      Relevant Coursework: Data Structures, Web Development, Operating Systems
-    </p>
-  </div>
+  </section>
 
-  <div class="item">
-    <div class="item-header">
-      <span>Intermediate (Class XII)</span>
-      <span>2023 — 79.4%</span>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Let’s connect</h2>
+
+    <div class="email-row">
+      <span id="email">sairoopeswara7@gmail.com</span>
+      <button id="copyBtn">Copy email</button>
     </div>
-    <p class="org">Sri Chaitanya Junior College, Tirupati</p>
-  </div>
 
-  <div class="item">
-    <div class="item-header">
-      <span>SSC (Class X)</span>
-      <span>2021 — 86.5%</span>
-    </div>
-    <p class="org">Sri Chaitanya School, Rayachoti</p>
-  </div>
-</section>
+    <form
+      id="contactForm"
+      class="contact-form"
+      action="https://formspree.io/f/manrzvzq"
+      method="POST"
+    >
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
 
-<!-- Certifications -->
-<section class="container reveal">
-  <h2>Certifications</h2>
+      <button type="submit" id="submitBtn">
+        <span class="btn-text">Send message</span>
+        <span class="spinner"></span>
+      </button>
 
-  <ul class="cert-list">
-    <li>
-      <strong>Oracle Certified: MySQL Fundamentals</strong>
-      <span>Jul 2025</span>
-    </li>
-    <li>
-      <strong>OCI AI Foundations Associate</strong>
-      <span>Jul 2025</span>
-    </li>
-    <li>
-      <strong>AWS APAC Solutions Architecture Virtual Experience (Forage)</strong>
-      <span>Jul 2025</span>
-    </li>
-    <li>
-      <strong>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</strong>
-      <span>Aug 2025</span>
-    </li>
-  </ul>
-</section>
+      <p id="formSuccess" class="success-msg">
+        Message sent successfully.
+      </p>
+      <p id="formError" class="error-msg">
+        Something went wrong. Please try again.
+      </p>
+    </form>
+  </section>
 
-
-  <!-- Footer -->
   <footer>
     © 2025 Vangimalla Roopeswara Sai Reddy
   </footer>
+
+  <!-- Toast -->
+  <div id="toast"></div>
+
 </body>
 </html>
